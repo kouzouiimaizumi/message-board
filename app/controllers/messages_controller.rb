@@ -18,7 +18,7 @@ class MessagesController < ApplicationController
       flash[:success] = 'Message が正常に投稿されました'
       redirect_to @message
     else
-      flash.now[:danger] = 'Message が投稿されませんでした'
+      flash.now[:danger] = 'Message が投稿されません'
       render :new
     end
   end
